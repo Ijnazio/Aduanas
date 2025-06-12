@@ -1,0 +1,284 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Chilean Customs Official Colors */
+:root {
+  /* Primary Chilean Government Colors */
+  --chile-red: hsl(350, 100%, 48%);
+  --chile-blue: hsl(214, 100%, 35%);
+  --chile-white: hsl(0, 0%, 100%);
+  
+  /* Customs Service Colors */
+  --customs-navy: hsl(214, 45%, 18%);
+  --customs-light-blue: hsl(200, 80%, 92%);
+  --customs-gray: hsl(210, 20%, 85%);
+  --customs-dark-gray: hsl(210, 20%, 25%);
+  
+  /* Status Colors */
+  --status-pending: hsl(45, 93%, 58%);
+  --status-approved: hsl(142, 71%, 45%);
+  --status-rejected: hsl(0, 84%, 60%);
+  --status-in-review: hsl(217, 91%, 60%);
+  
+  /* Background Colors */
+  --bg-primary: hsl(0, 0%, 100%);
+  --bg-secondary: hsl(210, 20%, 98%);
+  --bg-accent: hsl(200, 80%, 97%);
+  
+  /* Text Colors */
+  --text-primary: hsl(210, 20%, 15%);
+  --text-secondary: hsl(210, 20%, 45%);
+  --text-muted: hsl(210, 20%, 65%);
+}
+
+.dark {
+  --chile-red: hsl(350, 100%, 58%);
+  --chile-blue: hsl(214, 100%, 45%);
+  --chile-white: hsl(0, 0%, 90%);
+  
+  --customs-navy: hsl(214, 45%, 85%);
+  --customs-light-blue: hsl(200, 80%, 15%);
+  --customs-gray: hsl(210, 20%, 20%);
+  --customs-dark-gray: hsl(210, 20%, 85%);
+  
+  --bg-primary: hsl(210, 20%, 8%);
+  --bg-secondary: hsl(210, 20%, 12%);
+  --bg-accent: hsl(200, 80%, 12%);
+  
+  --text-primary: hsl(210, 20%, 95%);
+  --text-secondary: hsl(210, 20%, 75%);
+  --text-muted: hsl(210, 20%, 55%);
+}
+
+/* Chilean Government Header Styling */
+.chile-header {
+  background: linear-gradient(135deg, var(--chile-blue) 0%, var(--customs-navy) 100%);
+  color: var(--chile-white);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.chile-flag-stripe {
+  height: 4px;
+  background: linear-gradient(90deg, var(--chile-blue) 33%, var(--chile-white) 33%, var(--chile-white) 66%, var(--chile-red) 66%);
+}
+
+/* Customs Form Styling */
+.customs-form {
+  background: var(--bg-secondary);
+  border: 2px solid var(--customs-light-blue);
+  border-radius: 8px;
+}
+
+.customs-card {
+  background: var(--bg-primary);
+  border: 1px solid var(--customs-gray);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Status Indicators */
+.status-pending { color: var(--status-pending); }
+.status-approved { color: var(--status-approved); }
+.status-rejected { color: var(--status-rejected); }
+.status-in-review { color: var(--status-in-review); }
+
+.bg-status-pending { background-color: var(--status-pending); }
+.bg-status-approved { background-color: var(--status-approved); }
+.bg-status-rejected { background-color: var(--status-rejected); }
+.bg-status-in-review { background-color: var(--status-in-review); }
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(20, 14.3%, 4.1%);
+  --muted: hsl(60, 4.8%, 95.9%);
+  --muted-foreground: hsl(25, 5.3%, 44.7%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(20, 14.3%, 4.1%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(20, 14.3%, 4.1%);
+  --border: hsl(20, 5.9%, 90%);
+  --input: hsl(20, 5.9%, 90%);
+  --primary: hsl(222, 84%, 55%);
+  --primary-foreground: hsl(210, 40%, 98%);
+  --secondary: hsl(60, 4.8%, 95.9%);
+  --secondary-foreground: hsl(24, 9.8%, 10%);
+  --accent: hsl(60, 4.8%, 95.9%);
+  --accent-foreground: hsl(24, 9.8%, 10%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(60, 9.1%, 97.8%);
+  --ring: hsl(20, 14.3%, 4.1%);
+  --radius: 0.5rem;
+  
+  /* Chilean institutional colors */
+  --chile-blue: hsl(222, 84%, 55%);
+  --chile-blue-light: hsl(213, 94%, 68%);
+  --chile-red: hsl(0, 73%, 41%);
+  --success-green: hsl(142, 76%, 36%);
+}
+
+.dark {
+  --background: hsl(240, 10%, 3.9%);
+  --foreground: hsl(0, 0%, 98%);
+  --muted: hsl(240, 3.7%, 15.9%);
+  --muted-foreground: hsl(240, 5%, 64.9%);
+  --popover: hsl(240, 10%, 3.9%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --card: hsl(240, 10%, 3.9%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --border: hsl(240, 3.7%, 15.9%);
+  --input: hsl(240, 3.7%, 15.9%);
+  --primary: hsl(222, 84%, 55%);
+  --primary-foreground: hsl(210, 40%, 98%);
+  --secondary: hsl(240, 3.7%, 15.9%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --accent: hsl(240, 3.7%, 15.9%);
+  --accent-foreground: hsl(0, 0%, 98%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 4.9%, 83.9%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+/* Chilean institutional styling */
+.bg-chile-blue {
+  background-color: var(--chile-blue);
+}
+
+.bg-chile-blue-light {
+  background-color: var(--chile-blue-light);
+}
+
+.bg-chile-red {
+  background-color: var(--chile-red);
+}
+
+.bg-success-green {
+  background-color: var(--success-green);
+}
+
+.text-chile-blue {
+  color: var(--chile-blue);
+}
+
+.text-chile-blue-light {
+  color: var(--chile-blue-light);
+}
+
+.text-chile-red {
+  color: var(--chile-red);
+}
+
+.text-success-green {
+  color: var(--success-green);
+}
+
+.border-chile-blue {
+  border-color: var(--chile-blue);
+}
+
+.hover\:bg-chile-blue:hover {
+  background-color: var(--chile-blue);
+}
+
+.hover\:text-chile-blue:hover {
+  color: var(--chile-blue);
+}
+
+.focus\:ring-chile-blue:focus {
+  --tw-ring-color: var(--chile-blue);
+}
+
+.focus\:border-chile-blue:focus {
+  border-color: var(--chile-blue);
+}
+
+/* Custom gradients */
+.bg-gradient-chile {
+  background: linear-gradient(135deg, var(--chile-blue) 0%, var(--chile-blue-light) 100%);
+}
+
+/* Status badges */
+.status-pending {
+  @apply bg-yellow-100 text-yellow-800 border-yellow-200;
+}
+
+.status-approved {
+  @apply bg-green-100 text-green-800 border-green-200;
+}
+
+.status-rejected {
+  @apply bg-red-100 text-red-800 border-red-200;
+}
+
+.status-review {
+  @apply bg-blue-100 text-blue-800 border-blue-200;
+}
+
+/* Mobile-first responsive utilities */
+@media (max-width: 640px) {
+  .mobile-stack {
+    @apply flex-col space-y-2 space-x-0;
+  }
+  
+  .mobile-full {
+    @apply w-full;
+  }
+  
+  .mobile-center {
+    @apply text-center justify-center;
+  }
+}
+
+/* Chart container styling */
+.chart-container {
+  position: relative;
+  height: 300px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .chart-container {
+    height: 250px;
+  }
+}
+
+/* Form validation styling */
+.form-error {
+  @apply border-red-500 focus:border-red-500 focus:ring-red-500;
+}
+
+.error-message {
+  @apply text-red-600 text-sm mt-1;
+}
+
+/* Loading states */
+.loading-spinner {
+  @apply animate-spin rounded-full border-b-2 border-chile-blue;
+}
+
+/* Notification styles */
+.notification-success {
+  @apply bg-green-50 border-green-200 text-green-800;
+}
+
+.notification-error {
+  @apply bg-red-50 border-red-200 text-red-800;
+}
+
+.notification-info {
+  @apply bg-blue-50 border-blue-200 text-blue-800;
+}
+
+.notification-warning {
+  @apply bg-yellow-50 border-yellow-200 text-yellow-800;
+}

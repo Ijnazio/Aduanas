@@ -1,0 +1,131 @@
+✅ MENSAJE COMPLETO PARA ENVIAR A REPLIT (COPIA Y PEGA TODO ESTO)
+Hola Replit, necesito crear un prototipo funcional desde cero para un sistema web que modernice los procesos del Servicio Nacional de Aduanas de Chile, especialmente en pasos fronterizos terrestres como el Paso Pehuenche. Este prototipo será evaluado en la asignatura de Ingeniería de Software, por lo tanto debe cumplir tanto requisitos funcionales como no funcionales detallados a continuación.
+
+🔧 Tipo de sistema a construir
+Aplicación web responsive (diseño mobile-first obligatorio)
+
+Estilo institucional chileno (colores oficiales, branding profesional)
+
+Simulación de backend y base de datos local (mock JSON o Express)
+
+Rol multiusuario: cada perfil tiene una vista diferenciada y funcionalidades específicas
+
+🧑‍💼 Usuarios simulados que deben existir (pueden estar precargados):
+Funcionario Aduana – acceso completo: funcionario1 / pass123
+
+Turista – acceso a sus propios trámites: turista1 / pass123
+
+Inspector SAG – revisión de declaraciones: sag1 / pass123
+
+PDI – verificación de identidad/documentos: pdi1 / pass123
+
+🛠️ Tecnologías sugeridas
+Frontend: React.js o Vue.js
+
+Estilo: Tailwind CSS (obligatorio para mobile-first) o Bootstrap
+
+Backend simulado: Node.js con Express (solo para simular flujo de datos)
+
+Datos persistentes simulados: archivos JSON / objetos en memoria
+
+Exportación de reportes: simulación en PDF y Excel
+
+✅ Funcionalidades requeridas por el caso de estudio
+1. Login y Registro de Usuario
+Vista de registro para turistas que quieran crear una cuenta.
+
+Validación por funcionario antes de poder iniciar sesión (simulado).
+
+2. Vistas separadas por tipo de usuario
+Cada usuario ve solo su contenido:
+
+Turista: formularios personales y estado de trámite.
+
+SAG: formularios por revisar.
+
+PDI: verificación con observaciones.
+
+Aduana: control general y reportes.
+
+3. Panel de trámites
+Formulario para salida/entrada de menores
+
+Con validación obligatoria de autorización notarial.
+
+Formulario para vehículos particulares
+
+Simular documento "Salida y Admisión Temporal de Vehículos".
+
+Formulario de declaración jurada de alimentos o mascotas
+
+Checkbox dinámico y validación automática.
+
+4. Flujo institucional de revisión
+El proceso sigue esta secuencia:
+
+SAG aprueba o rechaza → notifica a PDI.
+
+PDI revisa → notifica a Aduana.
+
+Aduana aprueba el cruce → turista ve estado final.
+
+5. Panel de administración
+Dashboards de ingreso/egreso de personas y vehículos.
+
+Reportes por paso fronterizo, semana, mes, año.
+
+Gráficos de barras o circulares con filtros por fecha.
+
+6. Mensajes y navegación clara
+Mostrar mensajes como:
+
+"Formulario enviado con éxito"
+
+"Revisión pendiente"
+
+"Observaciones registradas"
+
+Transiciones suaves entre secciones.
+
+7. Seguridad y control de acceso
+Que ningún usuario pueda acceder a rutas que no le corresponden.
+
+Protege rutas por sesión activa y tipo de rol.
+
+8. Simulación de interoperabilidad con Argentina
+Al enviar el formulario de vehículo, mostrar:
+
+“Este documento será reconocido por Aduana Argentina en virtud del Acuerdo Binacional.”
+
+Simular tabla o mensaje que diga "Datos compartidos con Horcones (AR)".
+
+9. Ayuda contextual
+Centro de ayuda con Preguntas Frecuentes y tutoriales simulados.
+
+Iconos de info o tooltips en formularios complejos.
+
+🧪 Validaciones y pruebas
+Todos los campos obligatorios deben tener validación antes de enviar (con mensajes claros).
+
+Muestra campos incompletos con bordes rojos o íconos de advertencia.
+
+🗂️ Extras importantes para cumplir la pauta académica
+Exportar al menos un formulario PDF o Excel (ej. reporte mensual).
+
+Simular bitácora de cambios (pantalla de historial o changelog).
+
+Simulación de control de versiones (ej. guardar versión anterior del formulario).
+
+Este sistema será evaluado bajo normas de calidad ISO25000, por lo tanto se debe priorizar:
+
+Funcionalidad completa
+
+Rendimiento y rapidez
+
+Accesibilidad y usabilidad
+
+Seguridad básica en roles y vistas
+
+Diseño visual profesional e intuitivo
+
+Por favor, genera el sistema con estas instrucciones claras y ordenadas. Si necesitas una estructura sugerida de pantallas o wireframes, puedo entregarlos después.

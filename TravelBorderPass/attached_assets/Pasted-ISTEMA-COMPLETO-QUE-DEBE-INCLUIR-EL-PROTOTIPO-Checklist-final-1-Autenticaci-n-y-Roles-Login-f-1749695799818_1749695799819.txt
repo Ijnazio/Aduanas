@@ -1,0 +1,96 @@
+ISTEMA COMPLETO QUE DEBE INCLUIR EL PROTOTIPO (Checklist final)
+🔐 1. Autenticación y Roles
+ Login funcional con múltiples roles
+
+ Acceso restringido por tipo de usuario
+
+ Opción de registro para nuevos turistas (ideal: con aprobación simulada por funcionario)
+
+📋 2. Formularios obligatorios
+Sistema debe contener los siguientes formularios funcionales (con validaciones y flujo institucional):
+
+ Formulario para menores de edad
+
+RUT o Pasaporte
+
+Autorización notarial (campo obligatorio)
+
+Relación con el adulto
+
+Validación completa antes de envío
+
+ Formulario para salida temporal de vehículos
+
+Datos del vehículo
+
+Dueño / conductor
+
+Simulación de documento “Salida y Admisión Temporal de Vehículos”
+
+Mensaje que indique reconocimiento binacional (Chile–Argentina)
+
+ Declaración jurada de alimentos y mascotas
+
+Checkbox de productos ingresados
+
+Validación de productos prohibidos
+
+Firma digital simulada o aceptación
+
+🔁 3. Flujo de aprobación interinstitucional
+Debe estar implementado el ciclo:
+
+Turista envía formulario
+
+SAG revisa y aprueba/rechaza
+
+PDI revisa y observa o aprueba
+
+Aduana finaliza revisión y autoriza paso
+
+Turista ve el estado en tiempo real
+
+✔ Esto debe verse reflejado en la vista del turista y en los paneles de SAG, PDI y funcionario.
+
+📊 4. Dashboard Administrativo (para funcionarios)
+Debe incluir:
+
+ Estadísticas de ingresos/egresos por día, semana, mes
+
+ Filtros por fecha, tipo de formulario o paso fronterizo
+
+ Gráficos circulares o de barras
+
+ Opción de exportar reportes en PDF o Excel
+
+ Visualización de trámites pendientes, aprobados y rechazados
+
+🖼️ 5. Diseño y experiencia
+ Estilo institucional chileno (colores oficiales)
+
+ Responsive con diseño mobile-first
+
+ Navegación intuitiva entre vistas
+
+ Mensajes de confirmación (formulario enviado, revisión pendiente, etc.)
+
+ Ayuda contextual (FAQ, íconos informativos o instrucciones breves)
+
+🔐 6. Seguridad
+ Rutas protegidas por rol
+
+ Usuario no puede ver lo que no le corresponde
+
+ No acceso por URL directa a otras vistas
+
+🧪 7. Pruebas y validaciones
+ Validación de campos obligatorios en formularios
+
+ Mensajes claros de error si hay campos faltantes
+
+ Simulación de bitácora o historial de cambios (control de versiones)
+
+🌐 8. Simulación de interoperabilidad
+ Al menos un mensaje o tabla que simule la conexión con Aduana Argentina
+
+Ejemplo: “Datos enviados al sistema Horcones – Argentina”
